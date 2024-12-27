@@ -1,6 +1,4 @@
-I have gathered some information about your repository. However, it seems there is no description provided for the repository. Here is a draft for your README.md file based on the available information:
 
----
 
 # Data Structures and Algorithms in Python
 
