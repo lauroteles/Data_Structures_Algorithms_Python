@@ -17,23 +17,4 @@ This repository contains implementations of various data structures and algorith
   - Trees
   - Graphs
 
-## Getting Started
 
-To get started with these implementations, clone the repository:
-
-```bash
-git clone https://github.com/lauroteles/Data_Structures_Algorithms_Python.git
-cd Data_Structures_Algorithms_Python
-```
-
-## Usage
-
-Each directory contains Python scripts implementing various algorithms and data structures. Navigate to the respective directories to explore the implementations.
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes.
-
----
-
-Would you like to add any specific sections or information to this README.md file?
