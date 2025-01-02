@@ -62,6 +62,19 @@ class LinkedList:
 
         return True
 
+    ''' LL Pop '''
+    def pop(self):
+        if self.length == 0:
+            return None
+        temp = self.head
+        pre = self.head
+        while temp.next is not None:
+            pre = temp
+            temp = temp.next
+        self.tail = pre
+        self.tail.next = None
+        self.length -= 1        
+
 
 my_linked_list = LinkedList(5)        
 print(my_linked_list.tail.value)
