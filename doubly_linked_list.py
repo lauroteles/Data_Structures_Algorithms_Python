@@ -63,6 +63,41 @@ class DoublyLinkedList:
 
         self.length += 1
         return True 
+    def pop_first(self):
+        if self.length == 0:
+            return None
+        if self.length == 1:
+            self.head = None
+            self.tail = None
+        else:
+            temp = self.head
+            self.head = self.head.next
+            temp.next = None
+            self.head.prev = None
+            self.length -= 1
+            return temp    
+
+    def get(self,index):
+        if index < 0 or index >= self.length:
+            return None
+        temp = self.head
+        tail = self.tail
+        if index < self.length/2:
+            for _ in range(index):
+                temp = temp.next
+            return temp
+        else:
+            temp = self.tail
+            for _ in range(self.length-1,index,-1):
+                temp = temp.prev
+
+    def set_value(self,index,value):
+        temp = self.get(index)
+        if temp:
+            temp.value = value
+            return True
+        return False
+
 
 my_double_linked_list = DoublyLinkedList(10)
 
