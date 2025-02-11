@@ -35,6 +35,16 @@ class HashTable:
                     all_keys.append(self.data_map[i][j][0])
         return all_keys                    
 
+    def item_in_common(self,list1,list2):
+        my_dict = {}
+        for i in list1:
+            my_dict[i] = True
+
+        for j in list2:
+            if j in my_dict:
+                return True
+        return False               
+
 my_hash_table = HashTable()
 
 my_hash_table.set_hash('grapes',10000 )
