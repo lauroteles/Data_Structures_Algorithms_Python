@@ -26,14 +26,14 @@ class BinaryTree:
         if current_node == None:
             return Node(value)
         
-        if value < current_node.value:  # Compare value with current node's value, not with left or right node directly
+        if value < current_node.value:  
             if current_node.left is None:
-                current_node.left = Node(value)  # Create new node if left is None
+                current_node.left = Node(value) 
             else:
                 self.__r_insert(current_node.left, value)
         elif value > current_node.value:
             if current_node.right is None:
-                current_node.right = Node(value)  # Create new node if right is None
+                current_node.right = Node(value) 
             else:
                 self.__r_insert(current_node.right, value)
         
@@ -42,8 +42,10 @@ class BinaryTree:
 
     def r_insert(self,value):
         if self.root == None:
-            self.root = Node(value) 
+            self.root = Node(value)         
         self.__r_insert(self.root, value)
+
+
 
 print("Recursive Binary Tree")
 print("Inserting 10, 5, 15")
